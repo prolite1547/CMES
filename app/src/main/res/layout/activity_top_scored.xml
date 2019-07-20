@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white1"
+    tools:context="cmesapp.cmes_app.TopScored">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/shadow"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/id_header_top"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="3dp"
+            android:background="#22313F"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/id_back_topscore"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:clickable="true"
+                android:src="@drawable/back_arrow" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:shadowColor="#494949"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                android:text="TOP SCORE"
+                android:textColor="@color/white1"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:id="@+id/id_science_bottom_topscore"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_bottom_selected">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_top"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/atom"/>
+
+
+                    <TextView
+                        android:id="@+id/id_science_topscore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/black_grey"
+                        android:gravity="center"
+                        android:text="SCIENCE"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/id_english_bottom_topscore"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_bottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_top"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/language"/>
+
+                    <TextView
+                        android:id="@+id/id_english_topscore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/black_grey"
+                        android:gravity="center"
+                        android:text="ENGLISH"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/id_filipino_bottom_topscore"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/background_bottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_top"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/philippines"/>
+
+                    <TextView
+                        android:id="@+id/id_filipino_topscore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/black_grey"
+                        android:gravity="center"
+                        android:text="FILIPINO"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="85"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="3dp"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+
+                <TextView
+                    android:id="@+id/id_no_scorerow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:textColor="@color/black_grey"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="RANK"/>
+                <TextView
+                    android:id="@+id/id_user_scorerow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:textColor="@color/black_grey"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="USER"/>
+                <TextView
+                    android:id="@+id/id_score_scorerow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:textColor="@color/black_grey"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="POINTS"/>
+
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/id_recyclerview_topscore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

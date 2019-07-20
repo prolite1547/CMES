@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white1"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical">
+
+
+    <!--TODO English-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:background="@drawable/background_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/background_top"
+            android:paddingTop="3dp"
+            android:layout_marginBottom="3dp">
+
+
+            <ImageView
+                android:id="@+id/id_image_card"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/language"/>
+
+            <TextView
+                android:id="@+id/id_dese_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_grey"
+                android:textAllCaps="true"
+                android:textStyle="normal"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:shadowColor="#494949"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="ENGLISH"/>
+
+        </LinearLayout>
+
+        <!--TODO click CARD -->
+        <RelativeLayout
+            android:id="@+id/id_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true">
+
+
+            <LinearLayout
+                android:id="@+id/id_lock_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/background_lock"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/lock"
+                    android:scaleType="centerInside"
+                    android:layout_marginBottom="5dp"
+                    />
+                <TextView
+                    android:id="@+id/id_required_points_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/background_oval"
+                    android:gravity="center"
+                    android:textColor="#6A6A6A"
+                    android:textSize="25sp"
+                    android:text="Lock"/>
+
+                <TextView
+                    android:id="@+id/id_level_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white1"
+                    android:textSize="25sp"
+                    android:shadowColor="#494949"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3"
+                    android:text="Lv 1"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white1"
+    android:orientation="vertical"
+    tools:context="cmesapp.cmes_app.Category">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/shadow">
+        <RelativeLayout
+            android:id="@+id/id_header_category"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="70dp"
+            android:padding="5dp"
+            android:layout_marginBottom="3dp">
+
+            <ImageView
+                android:id="@+id/id_back_category"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/back_arrow"
+                android:clickable="true"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:shadowColor="#494949"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                android:text="CATEGORY"
+                android:textColor="@color/white1"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/id_topScore_category"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/white1"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:shadowColor="#494949"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                android:clickable="true"
+                android:text="TOP SCORE"
+                android:visibility="visible"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="25dp"
+        android:orientation="vertical">
+        
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <!--TODO Science-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:background="@drawable/background_bottom">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/background_top"
+                    android:paddingTop="3dp"
+                    android:layout_marginBottom="3dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/atom"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black_grey"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textSize="25sp"
+                                android:shadowColor="#494949"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="4"
+                                android:text="SCIENCE"/>
+                        </LinearLayout>
+
+                        <!--TODO click SCIENCE -->
+                        <RelativeLayout
+                            android:id="@+id/id_science_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clickable="true"/>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="5dp">
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:clickable="true"
+                                    android:background="@drawable/background_bottom">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:gravity="center"
+                                        android:background="@drawable/background_top_primary"
+                                        android:paddingTop="0dp"
+                                        android:layout_marginBottom="3dp">
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:textSize="20sp"
+                                            android:gravity="center"
+                                            android:textColor="@color/black_grey"
+                                            android:text="LET'S LEARN"/>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                                <!--TODO click SCIENCE_LEARN -->
+                                <RelativeLayout
+                                    android:id="@+id/id_science_learn_category"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:clickable="true"/>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_marginTop="5dp">
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:clickable="true"
+                                    android:background="@drawable/background_bottom_primary">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:gravity="center"
+                                        android:background="@drawable/background_top_primary"
+                                        android:paddingTop="0dp"
+                                        android:layout_marginBottom="3dp">
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:textSize="20sp"
+                                            android:gravity="center"
+                                            android:textColor="@color/black_grey"
+                                            android:text="TAKE A QUIZ"/>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                                <!--TODO click SCIENCE_QUIZ -->
+                                <RelativeLayout
+                                    android:id="@+id/id_science_quiz_category"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:clickable="true"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+            <!--TODO English-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:background="@drawable/background_bottom">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/background_top"
+                    android:paddingTop="3dp"
+                    android:layout_marginBottom="3dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/language"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black_grey"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textSize="25sp"
+                                android:shadowColor="#494949"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="4"
+                                android:text="ENGLISH"/>
+                        </LinearLayout>
+
+                        <!--TODO click ENGLISH -->
+                        <RelativeLayout
+                            android:id="@+id/id_english_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clickable="true"/>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="5dp">
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:clickable="true"
+                                    android:background="@drawable/background_bottom_primary">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:gravity="center"
+                                        android:background="@drawable/background_top_primary"
+                                        android:paddingTop="0dp"
+                                        android:layout_marginBottom="3dp">
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:textSize="20sp"
+                                            android:gravity="center"
+                                            android:textColor="@color/black_grey"
+                                            android:text="LET'S LEARN"/>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                                <!--TODO click ENGLISH_LEARN -->
+                                <RelativeLayout
+                                    android:id="@+id/id_english_learn_category"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:clickable="true"/>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_marginTop="5dp">
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:clickable="true"
+                                    android:background="@drawable/background_bottom_primary">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:gravity="center"
+                                        android:background="@drawable/background_top_primary"
+                                        android:paddingTop="0dp"
+                                        android:layout_marginBottom="3dp">
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:textSize="20sp"
+                                            android:gravity="center"
+                                            android:textColor="@color/black_grey"
+                                            android:text="TAKE A QUIZ"/>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                                <!--TODO click ENGLISH_QUIZ -->
+                                <RelativeLayout
+                                    android:id="@+id/id_english_quiz_category"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:clickable="true"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+            <!--TODO BUTTON-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:background="@drawable/background_bottom">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/background_top"
+                    android:paddingTop="3dp"
+                    android:layout_marginBottom="3dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/philippines"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black_grey"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textSize="25sp"
+                                android:shadowColor="#494949"
+                                android:shadowDx="2"
+                                android:shadowDy="2"
+                                android:shadowRadius="4"
+                                android:text="FILIPINO"/>
+                        </LinearLayout>
+
+                        <!--TODO click FILIPINO -->
+                        <RelativeLayout
+                            android:id="@+id/id_filipino_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clickable="true"/>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="5dp">
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:clickable="true"
+                                    android:background="@drawable/background_bottom_primary">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        android:gravity="center"
+                                        android:background="@drawable/background_top_primary"
+                                        android:paddingTop="0dp"
+                                        android:layout_marginBottom="3dp">
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:textSize="20sp"
+                                            android:gravity="center"
+                                            android:textColor="@color/black_grey"
+                                            android:text="LET'S LEARN"/>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                                <!--TODO click FILIPINO_LEARN -->
+                                <RelativeLayout
+                                    android:id="@+id/id_filipino_learn_category"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:clickable="true"/>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:layout_marginTop="5dp">
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:clickable="true"
+                                    android:background="@drawable/background_bottom_primary">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:gravity="center"
+                                        android:background="@drawable/background_top_primary"
+                                        android:paddingTop="0dp"
+                                        android:layout_marginBottom="3dp">
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:textSize="20sp"
+                                            android:gravity="center"
+                                            android:textColor="@color/black_grey"
+                                            android:text="TAKE A QUIZ"/>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                                <!--TODO click FILIPINO_QUIZ -->
+                                <RelativeLayout
+                                    android:id="@+id/id_filipino_quiz_category"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:clickable="true"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+    
+
+
+</LinearLayout>

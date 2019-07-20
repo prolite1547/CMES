@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white1"
+    tools:context="cmesapp.cmes_app.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/l1_splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="50dp">
+
+
+            <ImageView
+                android:id="@+id/title_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/title"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/l2_splash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_user_main"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="32sp"
+                android:textColor="@color/black_grey"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="XYNTAX AIROR"
+                android:fontFamily="sans-serif"
+                android:shadowColor="#494949"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:visibility="visible"
+                android:layout_marginBottom="10dp"
+                />
+
+            <!--TODO BUTTON-->
+            <RelativeLayout
+                android:id="@+id/id_btnContinue_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:background="@drawable/background_bottom">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/background_top"
+                    android:paddingTop="3dp"
+                    android:layout_marginBottom="3dp">
+
+                    <TextView
+                        android:id="@+id/id_btnContinue_text_main"
+                        android:layout_width="130dp"
+                        android:layout_height="50dp"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black_grey"
+                        android:gravity="center"
+                        android:text="CONTINUE"
+                        android:fontFamily="sans-serif"
+                        android:clickable="true"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/id_newgame_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/black_grey"
+                android:text="NEW GAME"
+                android:textStyle="bold"
+                android:layout_margin="20dp"
+                android:fontFamily="sans-serif"
+                android:clickable="true"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="278dp"
+        android:background="@drawable/clouds"
+        android:id="@+id/imageView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+    </ImageView>
+
+
+
+
+</RelativeLayout>
